@@ -11,7 +11,7 @@ import requests
 import datetime
 
 # Constants
-API_KEY = '44f9a7e09c5e4f84b286cc5358f4c25a'  # Replace with your News API key
+API_KEY = 'XYZ enter api key here for news'  # Replace with your News API key
 TICKER = 'RELIANCE.NS'
 START = '2015-01-01'
 END = datetime.date.today()
@@ -98,7 +98,7 @@ model.add(Dense(1))  # Output layer
 model.compile(optimizer='adam', loss='mean_squared_error')
 
 # Step 6: Train the model
-model.fit(X_train, y_train, batch_size=1, epochs=30)
+model.fit(X_train, y_train, batch_size=1, epochs=3)
 
 # Step 7: Make predictions
 predictions = model.predict(X_test)
